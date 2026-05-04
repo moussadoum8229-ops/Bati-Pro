@@ -44,7 +44,7 @@ export default function Navbar() {
           <a href="#" className="shrink-0 flex items-center ml-2 lg:ml-0">
             <img
               src="./Bati-pro.jpg"
-              className="h-10 md:h-16 object-contain rounded-md shadow-sm transition-transform hover:scale-105"
+              className="h-10 md:h-20 object-contain rounded-md shadow-sm transition-transform hover:scale-105"
               alt="Bamako Sira Logo"
             />
           </a>
@@ -57,7 +57,7 @@ export default function Navbar() {
                 href="#propos"
                 className="hover:text-blue-600 hover:bg-blue-50 transition-colors rounded-lg"
               >
-                À Propos
+                Acceuil
               </a>
             </li>
             <li>
@@ -65,7 +65,7 @@ export default function Navbar() {
                 href="#panneaux"
                 className="hover:text-blue-600 hover:bg-blue-50 transition-colors rounded-lg"
               >
-                Panneaux
+                A propos
               </a>
             </li>
             <li>
@@ -73,7 +73,7 @@ export default function Navbar() {
                 href="#infraction"
                 className="hover:text-blue-600 hover:bg-blue-50 transition-colors rounded-lg"
               >
-                Infraction
+                Service
               </a>
             </li>
             <li>
@@ -81,9 +81,26 @@ export default function Navbar() {
                 href="#paiement"
                 className="hover:text-blue-600 hover:bg-blue-50 transition-colors rounded-lg"
               >
-                Paiement
+                Projet/Realisation
               </a>
             </li>
+             <li>
+              <a
+                href="#paiement"
+                className="hover:text-blue-600 hover:bg-blue-50 transition-colors rounded-lg"
+              >
+                Equipe
+              </a>
+            </li>
+             <li>
+              <a
+                href="#paiement"
+                className="hover:text-blue-600 hover:bg-blue-50 transition-colors rounded-lg"
+              >
+                Contact
+              </a>
+            </li>
+            
           </ul>
         </div>
       </nav>
