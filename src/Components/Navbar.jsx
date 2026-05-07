@@ -52,7 +52,7 @@ export default function Navbar() {
 
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1 gap-4 text-base font-semibold">
-            <li>    
+            <li>
               <a
                 href="#propos"
                 className="hover:text-blue-600 hover:bg-blue-50 transition-colors rounded-lg"
@@ -84,7 +84,7 @@ export default function Navbar() {
                 Projet/Realisation
               </a>
             </li>
-             <li>
+            <li>
               <a
                 href="#paiement"
                 className="hover:text-blue-600 hover:bg-blue-50 transition-colors rounded-lg"
@@ -92,7 +92,7 @@ export default function Navbar() {
                 Equipe
               </a>
             </li>
-             <li>
+            <li>
               <a
                 href="#paiement"
                 className="hover:text-blue-600 hover:bg-blue-50 transition-colors rounded-lg"
@@ -100,8 +100,15 @@ export default function Navbar() {
                 Contact
               </a>
             </li>
-            
           </ul>
+        </div>
+
+        <div className="navbar-end w-[30%] lg:flex pr-2 lg:pr-4 justify-end">
+          <img
+            src="./Logo2.jpg"
+            className="h-10 w-10 md:h-14 md:w-14 rounded-full border-2 border-green-500 shadow-md transform hover:scale-105 transition-transform object-cover"
+            alt="Logo Ministère"
+          />
         </div>
       </nav>
     </div>
