@@ -1,6 +1,15 @@
 import React from "react";
 
 export default function Navbar() {
+
+  function scrollToSection(id) {
+
+    const element = document.getElementById(id)
+
+    element.scrollIntoView({
+      behavior: "smooth"
+    })
+  }
   return (
     <div>
       {/* Navbar */}
@@ -28,16 +37,22 @@ export default function Navbar() {
               className="menu menu-sm dropdown-content mt-3 z-1 p-2 shadow bg-white rounded-box w-52 font-semibold text-gray-700"
             >
               <li>
-                <a href="#propos">À Propos</a>
+                <button onClick={() => scrollToSection("Accueil")}>Acceuil</button>
               </li>
               <li>
-                <a href="#panneaux">Les formes de Panneaux</a>
+                <button onClick={() => scrollToSection("a-propos")}> À propos</button>
               </li>
               <li>
-                <a href="#infraction">Infraction</a>
+                <button onClick={() => scrollToSection("services")}>Service</button>
               </li>
               <li>
-                <a href="#paiement">Paiement</a>
+                <button onClick={() => scrollToSection("Avantage concurrentiel")}>Avantage concurrentiel</button>
+              </li>
+              <li>
+                <button onClick={() => scrollToSection("Temoignage")}>Temoignage</button>
+              </li>
+              <li>
+                <button onClick={() => scrollToSection("contact")}>Contact</button>
               </li>
             </ul>
           </div>
@@ -53,52 +68,22 @@ export default function Navbar() {
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1 gap-4 text-base font-semibold">
             <li>
-              <a
-                href="#propos"
-                className="hover:text-blue-600 hover:bg-blue-50 transition-colors rounded-lg"
-              >
-                Acceuil
-              </a>
+              <button className="hover:text-blue-600 hover:bg-blue-50 transition-colors rounded-lg" onClick={() => scrollToSection("Accueil")}>Acceuil</button>
             </li>
             <li>
-              <a
-                href="#panneaux"
-                className="hover:text-blue-600 hover:bg-blue-50 transition-colors rounded-lg"
-              >
-                A propos
-              </a>
+              <button className="hover:text-blue-600 hover:bg-blue-50 transition-colors rounded-lg" onClick={() => scrollToSection("a-propos")}> À propos</button>
             </li>
             <li>
-              <a
-                href="#infraction"
-                className="hover:text-blue-600 hover:bg-blue-50 transition-colors rounded-lg"
-              >
-                Service
-              </a>
+              <button className="hover:text-blue-600 hover:bg-blue-50 transition-colors rounded-lg" onClick={() => scrollToSection("services")}>Service</button>
             </li>
             <li>
-              <a
-                href="#paiement"
-                className="hover:text-blue-600 hover:bg-blue-50 transition-colors rounded-lg"
-              >
-                Projet/Realisation
-              </a>
+              <button className="hover:text-blue-600 hover:bg-blue-50 transition-colors rounded-lg" onClick={() => scrollToSection("Avantage concurrentiel")}>Avantage concurrentiel</button>
             </li>
             <li>
-              <a
-                href="#paiement"
-                className="hover:text-blue-600 hover:bg-blue-50 transition-colors rounded-lg"
-              >
-                Equipe
-              </a>
+              <button className="hover:text-blue-600 hover:bg-blue-50 transition-colors rounded-lg" onClick={() => scrollToSection("Temoignage")}>Temoignage</button>
             </li>
-            <li>
-              <a
-                href="#paiement"
-                className="hover:text-blue-600 hover:bg-blue-50 transition-colors rounded-lg"
-              >
-                Contact
-              </a>
+             <li>
+              <button className="hover:text-blue-600 hover:bg-blue-50 transition-colors rounded-lg" onClick={() => scrollToSection("contact")}>Contact</button>
             </li>
           </ul>
         </div>
