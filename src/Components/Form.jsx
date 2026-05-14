@@ -3,7 +3,9 @@ import React from 'react'
 export default function Form() {
   return (
     <div>
-       <form className="w-full max-w-md mx-auto bg-white p-6 md:p-8 rounded-2xl shadow-lg space-y-5 animate-heartbeat">
+       <form  action="https://formspree.io/f/xjglqgdn" method="POST"
+       
+       className="w-full max-w-md mx-auto bg-white p-6 md:p-8 rounded-2xl shadow-lg space-y-5 animate-heartbeat">
           <h1 className="text-2xl font-bold text-center text-gray-800">
             Contacter - nous
           </h1>
@@ -14,8 +16,8 @@ export default function Form() {
             </label>
             <input
               type="username"
-              placeholder="Entrez votre Nom d'utilisateur"
-              className="w-full px-4 py-2 rounded-xl border cursor-pointer border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              placeholder="Entrez votre Nom "
+              className="w-full px-4 py-2 rounded-xl text-black border cursor-pointer border-gray-300 "
             />
           </div>
 
@@ -26,7 +28,7 @@ export default function Form() {
             <input
               type="prenom"
               placeholder="Entrez votre prenom"
-              className="w-full px-4 py-2 rounded-xl border cursor-pointer border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full px-4 py-2 rounded-xl text-black border cursor-pointer border-gray-300 "
             />
           </div>
 
@@ -37,7 +39,7 @@ export default function Form() {
             <input
               type="prenom"
               placeholder="Entrez votre prenom"
-              className="w-full px-4 py-2 rounded-xl border cursor-pointer border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full px-4 py-2 rounded-xl text-black border cursor-pointer border-gray-300 "
             />
           </div>
 
@@ -48,7 +50,7 @@ export default function Form() {
             <textarea
               type="message"
               placeholder="Entrez votre message"
-              className="w-full px-4 py-2 h-24 rounded-xl border cursor-pointer border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full px-4 py-2 h-24 rounded-xl text-black border cursor-pointer border-gray-300 "
             />
           </div>
 
