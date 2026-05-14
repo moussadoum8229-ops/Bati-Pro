@@ -9,6 +9,14 @@ import Content from "./Components/Content";
 
 
 function App() {
+   function scrollToSection(id) {
+
+    const element = document.getElementById(id)
+
+    element.scrollIntoView({
+      behavior: "smooth"
+    })
+  }
   
 
   const images = [
@@ -95,12 +103,14 @@ function App() {
             />
           </div>
           <div className="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-10 mt-10 px-4">
-            <button className="btn glass hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-2xl w-full sm:w-auto">
+            <button onClick={() => scrollToSection("Avantage concurrentiel")} className="btn glass hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-2xl w-full sm:w-auto">
               Nos services
             </button>
-            <button className="btn glass hover:bg-green-700 text-white font-bold py-3 px-6 rounded-2xl w-full sm:w-auto">
+            
+            <button onClick={() => scrollToSection("contact")}   className="btn glass hover:bg-green-700 text-white font-bold py-3 px-6 rounded-2xl w-full sm:w-auto">
               Contactez-nous
             </button>
+  
           </div>
         </div>
       </div>
